@@ -1,71 +1,91 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19886284&assignment_repo_type=AssignmentRepo)
-# React.js and Tailwind CSS Assignment
+# React.js and Tailwind CSS Task Manager
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A responsive React application built with JSX and Tailwind CSS that demonstrates component architecture,
+state management, hooks usage, and API integration.
 
-## Assignment Overview
+## Features
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+- **Task Management**: Add, complete, delete, and filter tasks
+- **Theme Switching**: Toggle between light and dark mode
+- **API Integration**: Fetch and display posts from JSONPlaceholder
+- **Responsive Design**: Works on mobile, tablet, and desktop
+- **Component Architecture**: Reusable UI components
 
-## Getting Started
-
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-
-## Files Included
-
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
-
-## Requirements
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
 
 ## Project Structure
 
 ```
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+├── api/            # API integration functions
+├── components/     # Reusable UI components
+├── context/        # React context providers
+├── hooks/          # Custom React hooks
+├── pages/          # Page components
+├── utils/          # Utility functions
+└── App.jsx         # Main application component
 ```
 
-## Submission
+## Components
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+- **Button**: Reusable button with different variants (primary, secondary, danger)
+- **Card**: Component for displaying content in a boxed layout
+- **Navbar**: Navigation component with theme switcher
+- **Footer**: Footer with links and copyright information
+- **Layout**: Layout component that includes Navbar and Footer
+- **TaskManager**: Component for managing tasks with local storage
+- **PostList**: Component for displaying posts from JSONPlaceholder API
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+## Setup Instructions
 
-## Resources
+1. Clone the repository:
+   ```
+   git clone https://github.com/PLP-MERN-Stack-Development/week-3-react-js-assignment-ValerieMbaka.git
+   ```
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+2. Navigate to the project directory:
+   ```
+   cd week-3-react-js-assignment
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+
+5. Open your browser and navigate to:
+   ```
+   http://localhost:5173
+   ```
+
+## Technologies Used
+
+- **React.js**: Frontend library for building user interfaces
+- **Tailwind CSS**: Utility-first CSS framework
+- **Vite**: Next-generation frontend tooling
+- **JSONPlaceholder API**: Fake online REST API for testing
+
+## Features Implementation
+
+### Task Management
+- Uses custom `useLocalStorageTasks` hook for persisting tasks
+- Implements add, toggle, and delete functionality
+- Provides filtering options (All, Active, Completed)
+
+### Theme Switching
+- Uses React Context API for global theme state
+- Persists theme preference in localStorage
+- Supports system preference detection
+
+### API Integration
+- Fetches posts from JSONPlaceholder
+- Implements loading and error states
+- Provides pagination and search functionality
+
+## Deployment
+
+The application is deployed at: 
